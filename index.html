@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title style="color:#0165fc">PROYECTO COMPUTADORES</title>
+<title style="color:#0165fc">FRONTEND CICLO3 - RETO 3, RETO 4 Y RETO 5</title>
+    <meta charset="UTF-8">
+    <title> Computer </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+</head>
+
+<style>
+	table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	}
+</style>
+
+<body>
+    <h1 style="color:#0165fc">COMPUTADORES</h1>
+	<div>
+	    <input type="number" id="idcomputer" placeholder="id_Computer">
+	    <input type="text" id="name" placeholder="name">
+	    <input type="number" id="model" placeholder="model">
+	    <input type="number" id="year" placeholder="year">
+	    <input type="text" id="description" placeholder="description">
+	</div>
+	<button onclick="guardarInformacionComputer()">Guardar</button>
+	<button onclick="editarInformacionComputer()">Actualizar</button>
+	<button onclick="traerInformacionComputer()">Consultar</button>
+	<div id="resultadoComputer"></div>
+    	
+	<h1 style="color:#0165fc"> CATEGORIAS</h1>
+	<div>
+	    <input type="number" id="idCategoria" placeholder="idCategoria">
+		<input type="text" id="name" placeholder="name">
+	    <input type="text" id="description" placeholder="description">
+
+	</div>
+	
+	<button onclick="guardarInformacionCategoria()">Guardar</button>
+	<button onclick="editarInformacionCategoria()">Actualizar</button>
+	<button onclick="traerInformacionCategoria()">Consultar</button>
+	<div id="resultadoCategoria"></div>
+
+	<h1 style="color:#0165fc"> CLIENTES</h1>
+	<div>
+	    <input type="number" id="idClient" placeholder="idClient">
+	    <input type="text" id="email" placeholder="email">
+	    <input type="number" id="password" placeholder="password">
+	    <input type="text" id="nameClient" placeholder="nameClient">
+		<input type="number" id="age" placeholder="age">
+	</div>
+	
+	<button onclick="guardarInformacionClient()">Guardar</button>
+	<button onclick="editarInformacionClient()">Actualizar</button>
+	<button onclick="traerInformacionClient()">Consultar</button>
+	<div id="resultadoClient"></div>	
+
+	
+    
+    <h1 style="color:#0165fc"> MENSAJES</h1>
+	<div>
+	    <input type="number" id="idMessage" placeholder="idMessage">
+	    <input type="text" id="messagetext" placeholder="messagetext">
+
+	</div>
+	
+	<button onclick="guardarInformacionMessage()">Guardar</button>
+	<button onclick="editarInformacionMessage()">Actualizar</button>
+	<button onclick="traerInformacionMessage()">Consultar</button>
+	<div id="resultado"></div>
+
+	<h1 style="color:#0165fc"> RESERVACIONES</h1>
+	<div>
+	    <input type="number" id="idReservation" placeholder="idReservation">
+	    <input type="Date" id="startDate" placeholder="startDate">
+   <input type="Date" id="devolutionDate" placeholder="devolutionDate">
+   <input type="text" id="status" placeholder="status">
+
+	</div>
+	
+	<button onclick="guardarInformacionReservacion()">Guardar</button>
+	<button onclick="editarInformacionReservacion()">Actualizar</button>
+	<button onclick="traerInformacionReservacion()">Consultar</button>
+	<div id="resultadoReservacion"></div>
+ 
+
+	<h1 style="color:#0165fc"> REPORTES </h1>
+
+ 	<button onclick="traerReporteStatus()">Generar Reporte Status Reservas </button>
+    <div id="resultadoStatus"></div>
+	
+	<input type="date" id="RstarDate" placeholder="descripcion">
+	<input type="date" id="RdevolutionDate" placeholder="descripcion">
+
+	<button onclick="traerReporteDate()">Generar Reporte por fecha </button>
+    <div id="resultadoDate"></div>
+
+	<button onclick="traerReporteClientes()">Generar Reporte Clientes y Cantidad de reservas por cliente </button>
+    <div id="resultadoClientes"></div>
+
+
+     	<body>
+
+</html>
